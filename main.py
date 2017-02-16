@@ -109,7 +109,8 @@ To add an user account associated with an email, type: add account. \n\
 To simply create a password, type: password generator.\n\
 To view a file, type: display file.\n\
 To change the encryption key, type: change key. \n\
-To display your emails, type: display emails. \n"
+To display your emails, type: display emails. \n\
+To exit, type: exit\n"
 
     while not exit:
         uInput = raw_input("Input: ")
@@ -143,5 +144,8 @@ To display your emails, type: display emails. \n"
 
         if uInput.lower() == "display emails":
             displayEmails()
+
+        if uInput.lower() == "exit":
+            quit()
 
 userInput()
